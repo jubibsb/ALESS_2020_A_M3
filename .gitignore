@@ -18,6 +18,7 @@ lib/
 lib64/
 parts/
 sdist/
+datas/
 var/
 wheels/
 pip-wheel-metadata/
