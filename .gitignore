@@ -27,6 +27,7 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
+processing/
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -74,6 +75,7 @@ docs/_build/
 
 # PyBuilder
 target/
+samples/
 
 # Jupyter Notebook
 .ipynb_checkpoints

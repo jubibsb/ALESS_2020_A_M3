@@ -1,7 +1,7 @@
-from keras.layers import Input #ニューラルネットワークの入力に用いる
-from keras.layers import Dense #ニューラルネットワークの各層の変換に用いる（Dense: 通常の層（全結合層）を意味する）
-from keras.models import Model #ニューラルネットワークモデル構築に用いる
-from keras.layers import Conv2D, MaxPooling2D, Flatten #畳み込み・プーリング・ベクトル化を読み込み
+from keras.layers import Input 
+from keras.layers import Dense 
+from keras.models import Model 
+from keras.layers import Conv2D, MaxPooling2D, Flatten 
 from keras.utils import to_categorical
 from keras.layers import BatchNormalization, Reshape, LeakyReLU, Flatten
 import numpy as np
