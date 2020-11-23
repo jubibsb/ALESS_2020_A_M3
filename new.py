@@ -4,6 +4,7 @@ from keras.utils import to_categorical
 
 import numpy as numpy
 import keras
+import numpy as np
 import matplotlib.pyplot as plt
 
 import joblib
@@ -32,11 +33,7 @@ def build_discriminator():
 	middle=LeakyReLU(alpha=0.2)(middle)
 	middle=Dense(1000)(middle)
 	middle=LeakyReLU(alpha=0.2)(middle)
-	outputs=Dense(11,activation="sigmoid")(middle)#本物の0~9か、偽物(11番目のラベル)か
+	outputs=Dense(20,activation="sigmoid")(middle)#本物の0~9か、偽物の0~9か
 
 	discriminator=Model(inputs=inputs,outputs=outputs,name="Discriminator")
 	return discriminator
-
-def sample_images(epoch):
-#	x,y=5,5#画像を5*5個
-
